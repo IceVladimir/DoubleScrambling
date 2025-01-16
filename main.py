@@ -256,9 +256,9 @@ class MainApplication:
         else:
             if self.selection_value.get() == 1:
                 self.UsingFunc[self.method_combobox.get()][self.selection_value.get() - 1](self.listFilenames[0], self.get_divisors(self.get_image_size(self.listFilenames[0]))[1], 1, self.first_key_entry.get().replace("\n", ""), f"{self.output_entry.get()}/temp_image.png")
-                self.UsingFunc[self.method_combobox.get()][self.selection_value.get() - 1](f"{self.output_entry.get()}/temp_image.png", self.get_divisors(self.get_image_size(self.listFilenames[0]))[1], 2, self.second_key_entry.get().replace("\n", ""),f"{self.output_entry.get()}/output.png")
+                self.UsingFunc[self.method_combobox_second.get()][self.selection_value.get() - 1](f"{self.output_entry.get()}/temp_image.png", self.get_divisors(self.get_image_size(self.listFilenames[0]))[1], 2, self.second_key_entry.get().replace("\n", ""),f"{self.output_entry.get()}/output.png")
             else:
-                self.UsingFunc[self.method_combobox.get()][self.selection_value.get() - 1](self.listFilenames[0], self.get_divisors(self.get_image_size(self.listFilenames[0]))[1], 2, self.second_key_entry.get().replace("\n", ""), f"{self.output_entry.get()}/temp_image.png")
+                self.UsingFunc[self.method_combobox_second.get()][self.selection_value.get() - 1](self.listFilenames[0], self.get_divisors(self.get_image_size(self.listFilenames[0]))[1], 2, self.second_key_entry.get().replace("\n", ""), f"{self.output_entry.get()}/temp_image.png")
                 self.UsingFunc[self.method_combobox.get()][self.selection_value.get() - 1](f"{self.output_entry.get()}/temp_image.png", self.get_divisors(self.get_image_size(self.listFilenames[0]))[1], 1, self.first_key_entry.get().replace("\n", ""), f"{self.output_entry.get()}/output.png")
 
 
