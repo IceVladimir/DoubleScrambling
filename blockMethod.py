@@ -18,7 +18,7 @@ def block_encrypt_image(image_path, block_size, key_number, key_output_path, out
     if height % block_size != 0 or width % block_size != 0:
         raise ValueError("Размеры изображения должны быть кратны размеру блока.")
 
-    # Разбиваем изображение на блоки
+    # Разбиваем изображение на блоки И
     blocks = []
     for y in range(0, height, block_size):
         for x in range(0, width, block_size):
